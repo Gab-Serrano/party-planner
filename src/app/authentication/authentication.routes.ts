@@ -5,17 +5,22 @@ import { AuthenticationPage } from './authentication.page';
 export const routes: Routes = [
     {
         path: '',
-        component: AuthenticationPage
+        component: AuthenticationPage,
     },
     {
         path: 'login',
         component: AuthenticationPage,
     },
     {
-        path: 'singup',
+        path: 'signup',
         component: AuthenticationPage,
-    }
-]
+    },
+    {
+        path: 'reset',
+        component: AuthenticationPage,
+    },
+    {path: '**', redirectTo: 'login', pathMatch: 'full'}
+];
 
 
 
